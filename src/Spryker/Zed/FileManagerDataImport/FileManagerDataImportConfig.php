@@ -29,9 +29,6 @@ class FileManagerDataImportConfig extends DataImportConfig
         return $this->buildImporterConfiguration($moduleDataImportDirectory . 'mime_type.csv', static::IMPORT_TYPE_MIME_TYPE);
     }
 
-    /**
-     * @return string
-     */
     protected function getModuleRoot(): string
     {
         $moduleRoot = realpath(

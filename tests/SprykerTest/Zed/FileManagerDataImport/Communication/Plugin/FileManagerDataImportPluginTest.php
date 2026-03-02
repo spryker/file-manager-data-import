@@ -32,9 +32,6 @@ class FileManagerDataImportPluginTest extends Unit
      */
     protected $tester;
 
-    /**
-     * @return void
-     */
     public function testImportImportsMimeTypes(): void
     {
         $this->tester->ensureDatabaseTableIsEmpty();
@@ -53,9 +50,6 @@ class FileManagerDataImportPluginTest extends Unit
         $this->tester->assertDatabaseTableContainsData();
     }
 
-    /**
-     * @return void
-     */
     public function testGetImportTypeReturnsTypeOfImporter(): void
     {
         $fileManagerDataImportPlugin = new FileManagerDataImportPlugin();

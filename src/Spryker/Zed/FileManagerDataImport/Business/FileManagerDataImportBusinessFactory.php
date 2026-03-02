@@ -33,9 +33,6 @@ class FileManagerDataImportBusinessFactory extends DataImportBusinessFactory
         return $dataImporter;
     }
 
-    /**
-     * @return \Spryker\Zed\DataImport\Business\Model\DataImportStep\DataImportStepInterface
-     */
     protected function createMimeTypeExtensionsEncodeStep(): DataImportStepInterface
     {
         return new MimeTypeExtensionsEncodeStep(
@@ -43,9 +40,6 @@ class FileManagerDataImportBusinessFactory extends DataImportBusinessFactory
         );
     }
 
-    /**
-     * @return \Spryker\Zed\DataImport\Business\Model\DataImportStep\DataImportStepInterface
-     */
     protected function createMimeTypeWriterStep(): DataImportStepInterface
     {
         return new MimeTypeWriterStep();
