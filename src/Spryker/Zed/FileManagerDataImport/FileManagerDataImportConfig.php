@@ -13,6 +13,8 @@ use Spryker\Zed\DataImport\DataImportConfig;
 class FileManagerDataImportConfig extends DataImportConfig
 {
     /**
+     * @api
+     *
      * @var string
      */
     public const IMPORT_TYPE_MIME_TYPE = 'mime-type';
